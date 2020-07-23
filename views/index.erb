@@ -1,11 +1,21 @@
 <header>
 
+<% if logged_in? %>
+    <a href="/dishes/new">post a dish</a>
+<% end %>
+
+<% dishes.each do |dish|%>
+    <h2><%= dish['title'] %></h2>
+    <a href="/dishes/<%= dish['id']%>">
+        <img src="<%= dish['image_url'] %>" alt="">
+    </a>
+<%end%>
 
 </header>
 
 <h1>Which Gotei 13 Captain are You</h1>
 
-<img src="https://pm1.narvii.com/6629/e3fd42907824626273fade1b70185e2288e555c2_hq.jpg" alt="" style="width:300px">
+<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51158316-fd7e-48ca-b5fe-8542e9dfe357/ddfouw6-3b2f4a09-7208-4321-9076-6b2f103a8219.png/v1/fill/w_946,h_614,strp/jushiro_ukitake_13th_division_captain_by_bodskih_ddfouw6-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02MTQiLCJwYXRoIjoiXC9mXC81MTE1ODMxNi1mZDdlLTQ4Y2EtYjVmZS04NTQyZTlkZmUzNTdcL2RkZm91dzYtM2IyZjRhMDktNzIwOC00MzIxLTkwNzYtNmIyZjEwM2E4MjE5LnBuZyIsIndpZHRoIjoiPD05NDYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.x1R34_GSCyh375F2aKrODn6U-81n0Wnq6H-6KXWNKBg" alt="">
 
 <ul>
     <li><a href="/signup">Sign Up</a></li>

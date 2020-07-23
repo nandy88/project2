@@ -10,13 +10,23 @@ require 'pg'
 
 enable :sessions
 
-# def logged_in?
-#   if session["user_id"]
-#     return true
-#   else 
-#     return false
-#   end
-# end
+def logged_in?
+
+  if session["user_id"]
+    
+    return true
+  
+  else 
+    
+    return false
+  
+  end
+end
+
+def current_user
+  
+  return find_one_user_by_id(session["user_id"])
+end
 
 get '/' do
 

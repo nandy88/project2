@@ -1,17 +1,17 @@
-CREATE DATABASE ;
+CREATE DATABASE which_captain_are_you;
 
-CREATE TABLE dishes (
+CREATE TABLE captains (
     id SERIAL PRIMARY KEY,
-    title VARCHAR(200),
-    image_url TEXT
+    name TEXT,
+    image_url TEXT,
+    bio TEXT,
+    user_id INTEGER
 );
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    email TEXT
+    name TEXT,
+    email TEXT,
+    username TEXT,
+    password_digest TEXT  
 );
-
-ALTER TABLE dishes ADD COLUMN user_id INTEGER;
-
-
-ALTER TABLE users ADD COLUMN password_digest TEXT;
