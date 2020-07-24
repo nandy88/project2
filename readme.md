@@ -4,7 +4,7 @@ A bit of fun for fans of Anime
 
 See Link below
 
-* **https://sqlbolt.com/**
+* **https://fathomless-sea-02094.herokuapp.com/**
 
     by Nandy Rodrigo
 
@@ -12,9 +12,9 @@ See Link below
 
 ### Planning
 
-    The objective of this project was to build my first full-stack database backed application. To demonstrate this, I chose to build a simple app where users could answer a series of questions and be assigned a hero based on their answers.
+The objective of this project was to build my first full-stack database backed application. To demonstrate this, I chose to build a simple app where users could answer a series of questions and be assigned a hero based on their answers.
 
-    My original planning for this project consisted of mocking up some wireframes on paper and then outlining what routes my users would take as they worked their way through the site. I also created a to do list of items I had to complete as I made my way through the build but deviated heavily from that towards the final day of work as it became clear that what I envisioned would cause me to exceed my timeframe for completion.
+My original planning for this project consisted of mocking up some wireframes on paper and then outlining what routes my users would take as they worked their way through the site. I also created a to do list of items I had to complete as I made my way through the build but deviated heavily from that towards the final day of work as it became clear that what I envisioned would cause me to exceed my timeframe for completion.
 
     See images 1 & 2 for sketched wireframes
 
@@ -50,9 +50,9 @@ Rather that rushing into development, I need to refine my approach to solving a 
 
 ### Issues and Incomplete:
 
-    Using PATCH to update a resource
-    Linking questions to Captain table to minimise the pool of Captain before making a selection
-    Creating more questions
-    Completing CSS for a clean visual finish
-    Updating Captain BIOs
-    Displaying and Removing relevent links and buttons for when logged in/out
+Using PATCH to update a resource
+Linking questions to Captain table to minimise the pool of Captain before making a selection
+Creating more questions
+Completing CSS for a clean visual finish
+Updating Captain BIOs
+Displaying and Removing relevent links and buttons for when logged in/out
