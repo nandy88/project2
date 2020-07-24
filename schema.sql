@@ -5,7 +5,6 @@ CREATE TABLE captains (
     name TEXT,
     image_url TEXT,
     bio TEXT,
-    user_id INTEGER
 );
 
 CREATE TABLE users (
@@ -15,3 +14,10 @@ CREATE TABLE users (
     username TEXT,
     password_digest TEXT  
 );
+
+ALTER TABLE users ADD COLUMN captain_id INTEGER;
+
+
+
+
+

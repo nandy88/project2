@@ -15,7 +15,7 @@ def find_one_user_by_username(username)
     return users.first
 end
 
-def create_user(name,email,username,password_digest)
+def create_user(name,email,username,password)
     password_digest = BCrypt::Password.create(password)
     sql = "insert into users (name,email,username,password_digest) values ('#{name}','#{email}','#{username}','#{password_digest}');"
     run_sql(sql)
@@ -25,3 +25,9 @@ def destroy_user(id)
     sql = "delete from users where id = #{id};"
     run_sql(sql)
 end
+
+def assign_captain(captain_id, user_id)
+    sql = "update users set captain_id = '#{captain_id}' where id = '#{user_id}';" 
+    run_sql(sql)
+end
+

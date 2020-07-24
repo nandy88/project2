@@ -5,10 +5,37 @@
   <title>Which Gotei 13 Captain are You</title>
   <link rel='stylesheet' href='/stylesheets/main.css/'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
 
-  <%= yield %>
+    <% if logged_in?%>
+      <p>logged in as <%= current_user["username"]%></p>
+      <form class="other_form" action="/session" method="post">
+      <input type="hidden" name="_method" value="delete" id="">
+        <button>Log Out</button>
+      </form>
+      <a href="/">Home</a>
+      <a href="/captain_questions">Back to Questions</a>
+    <% else %>
+      <a href="/signup">Sign Up</a>
+      <a href="/login">Log In</a>
+      <a href="/">Home</a>
+    <% end %>
+
+  </header>
+
+  <section>
+    <%= yield %>
+  </section>
+
+  <footer>
+    <% if logged_in?%>
+      <a href="/close_account">Close Account</a>
+    <% end %>
+  </footer>
+
 
 </body>
 </html>
