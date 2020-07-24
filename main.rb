@@ -1,9 +1,9 @@
      
 require 'sinatra'
 require 'sinatra/reloader' if development?
-also_reload 'models/dish.rb' if development?
+also_reload 'models/captain.rb' if development?
 also_reload 'models/user.rb' if development?
-require 'pry'
+# require 'pry'
 require 'pg'
 require_relative 'models/captain.rb'
 require_relative 'models/user.rb'
